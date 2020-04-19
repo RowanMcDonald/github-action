@@ -124,7 +124,7 @@ const getNpmCache = () => {
   }
 
   if (useYarn()) {
-    o.inputPath = path.join(homeDirectory, '.cache', 'yarn')
+    o.inputPath = path.join(homeDirectory, 'node_modules')
   } else {
     o.inputPath = NPM_CACHE_FOLDER
   }
